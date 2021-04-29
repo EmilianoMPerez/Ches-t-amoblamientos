@@ -1,0 +1,441 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: darkolivegreen;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+
+  .contenedorHome{
+    display: grid;
+    height: 1200px; 
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 5% 50% 10%;
+    grid-template-areas: "header"
+                            "menu"
+                            "contenido"
+                            "footer" ;
+
+                            .banner {
+    
+                                height: 450px;
+                                margin-left: 30px;
+                                margin-right: 30px;
+                                grid-area: header;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                background-image: url("../vintage2.jpg");
+                                background-position: center;
+                                background-size:cover;
+                                background-repeat: no-repeat;
+                                background-position-x: center;
+                                background-position-y: 100%;
+                                background-attachment: scroll;
+                                border: solid black 2px;
+                                                       }
+                                .titulo {
+                                  font-size: 60px;
+                                  margin: 0;
+                                  color:white;
+                                  text-align: center;
+                                  font-family: 'Roboto', sans-serif;
+                                   padding-bottom: 20px; }
+                                .subtitulo {
+                                  font-size: 30px;
+                                  margin: 0;
+                                  color: black;
+                                  text-align: center;
+                                  font-family: 'Roboto', sans-serif;
+                                  padding-top: 29px;
+                                 }  
+                                 
+
+                         nav{
+                                margin-left: 30px;
+                                margin-right: 30px;
+                                margin-bottom: 10px;
+                                grid-area: menu;
+                                border: solid black 2px;
+                                
+
+
+                            .listaMadreHome{
+                                    margin: 0;
+                                    padding: 0;
+                                    list-style-type: none;
+                                    background-color:rgb(11, 80, 11);       
+                                    height: 100%;
+                                    align-items: center;
+                                    justify-items:center ;
+                                    display: grid;
+                                    grid-template-columns: 20% 20% 20% 20%  20%;
+                                    grid-template-rows: 100%;
+
+                                    .logoChest{
+                                        font-family: 'Nunito Sans', sans-serif;
+                                        color:darkgoldenrod;
+                                        font-size: 27px;
+                                        font-weight: bold;
+                                        font-style: oblique;
+                                        padding-left: 15px; 
+                                              }
+                                    .listaHome{
+                                        color:white;  
+                                        font-family: 'Roboto', sans-serif;
+                                        font-size: 25px;
+                                            }
+                                            .listaHome:hover{
+                                                color: black;
+                                                transform: scale(1.2, 1.2);
+                                                font-weight: bold;
+                                            }    
+                                     }
+
+
+                                        }
+             .encabezadoHome{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                width: 100%;
+                 margin-bottom: 10px;
+                 margin-top: 10px;
+                 border: solid black 2px;
+                color:white;  
+                font-family: 'Roboto', sans-serif;
+                font-size: 25px;
+                font-weight:lighter;
+                background: radial-gradient(circle, rgba(54,185,51,1) 0%, rgba(18,83,5,1) 100%);
+             }                           
+
+            .seccionHome{
+                                    border: solid black 2px; 
+                                    margin-left: 30px;
+                                    margin-right: 30px;
+                                    margin-top: 50px;
+                                    display:grid;
+                                    grid-area: contenido;
+                                    grid-template-columns: 33% 33% 34%;
+                                    grid-template-rows: 50% 50%;
+                                    grid-template-areas: 
+                                                        "foto1 foto2 foto3"
+                                                        "foto4 foto5 foto6";
+
+
+                                        #fotoUno{ 
+                                            grid-area: foto1;
+                                        }
+
+                                        #fotoDos{
+                                            grid-area: foto2; 
+                                        }  
+
+                                        #fotoTres{
+                                            grid-area: foto3; 
+                                            
+                                        } 
+
+                                        #fotoCuatro{
+                                             grid-area: foto4;
+                                         }
+
+                                        #fotoCinco{
+                                            grid-area: foto5;
+                                         } 
+
+                                        #fotoSeis{
+                                            grid-area: foto6;
+                                         }                    
+                                                                
+                                                       
+                                        }
+
+                                                footer{
+                                                    background-color:black;
+                                                            height: 100px;
+                                                            display: flex;
+                                                            flex-direction: row;
+                                                            justify-content: center;
+                                                            flex-wrap: nowrap;
+                                                            align-items:center;
+                                                            margin-left: 30px;
+                                                            margin-bottom: 30px;
+                                                            margin-right: 30px;
+                                                            margin-top: 10px;
+                                                            grid-area: footer;
+
+
+                                                            #botonFacebook{
+                                                                font-size: 60px;
+                                                                color:white;
+                                                                 margin: 0;
+                                                                 flex-grow: 1;
+                                                                 text-align: center;
+                                                                 padding-left: 30px;
+                                                                     
+                                                            }
+                                                            #botonFacebook:hover{
+                                                                font-size: 70px;
+                                                                color:#3b5998;
+                                                            }
+                                                            #botonInstagram{
+                                                                font-size: 60px;
+                                                                color:white;
+                                                                 margin: 0;
+                                                                 flex-grow: 1;
+                                                                 text-align: center;
+                                                                 padding-left: 30px;
+                                                                    
+                                                            }
+                                                            #botonInstagram:hover{
+                                                                font-size: 70px;
+                                                                color: #983f9b;
+                                                            }
+                                                            #botonTwitter{
+                                                                font-size: 60px;
+                                                                color:white;
+                                                                 margin: 0;
+                                                                 flex-grow: 1;
+                                                                 text-align: center;
+                                                                 padding-left: 30px;
+                                                            }
+                                                            #botonTwitter:hover{
+                                                                font-size: 70px;
+                                                                color: #00acee;
+                                                            }
+                                                         } 
+                                                           }                     
+                     
+
+.headerGeneral{
+
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border: solid black 2px;
+    background-color: rgb(11, 80, 11);
+    height: 150px;
+    text-align: center; 
+
+    h1{
+           
+        color:white;  
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        padding-top: 50px;
+        font-weight:lighter;
+
+           }
+         }
+
+.contenedorEncabezado{
+      
+    background: radial-gradient(circle, rgba(54,185,51,1) 0%, rgba(18,83,5,1) 100%);
+        margin: 30px;
+        height: 50px;
+        border: solid black 2px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            color:black;  
+            font-family: 'Roboto', sans-serif;
+            font-size: 25px;
+            font-style: normal;
+            font-weight:lighter;    
+                                } 
+
+              }
+              .menuInterior{
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 10px;
+                grid-area: menu;
+                border: solid black 2px;
+
+            .listaMadreHome{
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                    background-color:rgb(11, 80, 11);       
+                    height: 100%;
+                    align-items: center;
+                    justify-items:center ;
+                    display: grid;
+                    grid-template-columns: 20% 20% 20% 20%  20%;
+                    grid-template-rows: 100%;
+
+                    .logoChest{
+                        font-family: 'Nunito Sans', sans-serif;
+                        color:darkgoldenrod;
+                        font-size: 27px;
+                        font-weight: bold;
+                        font-style: oblique;
+                        padding-left: 15px; 
+                              }
+                    .listaHome{
+                        color:white;  
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 25px;
+                            }
+                            .listaHome:hover{
+                                color: black;
+                                transform: scale(1.2, 1.2);
+                                font-weight: bold;
+                            }    
+                     }
+                    }
+
+
+
+    .seccionNosotros{
+        margin: 30px;
+        height: 800px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+                   "parrafo1 imagen1"
+                   "imagen2 parrafo2";
+                        } 
+        .textoNosotros1{ 
+            color:black; 
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            grid-area: parrafo1; 
+            background-color:rgb(112, 110, 110);
+            text-align:left;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-left: 30px;
+                            }
+            .primeraImagenNosotros{
+                grid-area: imagen1;   
+            }
+            .textoNosotros2{ 
+            color:black; 
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px; 
+            grid-area: parrafo2;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-left: 30px;
+            background-color: rgb(204, 163, 148);
+                            }
+            .segundaImagenNosotros{
+                grid-area: imagen2;
+            }
+            .tamañoImg{
+                max-width: 100%;
+                height: auto;
+            }
+
+.redes{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight:lighter;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    background: radial-gradient(circle, rgba(123,144,120,1) 0%, rgba(0,0,0,1) 100%);
+    height: 60px;
+    display: flex;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 30px;
+
+    .textoRedes{
+        margin: 0;    
+    }
+
+    }
+
+    footer{
+        background-color:black;
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: nowrap;
+                align-items:center;
+                margin-left: 30px;
+                margin-bottom: 30px;
+                margin-right: 30px;
+                grid-area: footer;
+
+
+                #botonFacebook{
+                    font-size: 60px;
+                    color:white;
+                     margin: 0;
+                     flex-grow: 1;
+                     text-align: center;
+                     padding-left: 30px;
+                         
+                }
+                #botonFacebook:hover{
+                    font-size: 70px;
+                    color:#3b5998;
+                }
+                #botonInstagram{
+                    font-size: 60px;
+                    color:white;
+                     margin: 0;
+                     flex-grow: 1;
+                     text-align: center;
+                     padding-left: 30px;
+                        
+                }
+                #botonInstagram:hover{
+                    font-size: 70px;
+                    color: #983f9b;
+                }
+                #botonTwitter{
+                    font-size: 60px;
+                    color:white;
+                     margin: 0;
+                     flex-grow: 1;
+                     text-align: center;
+                     padding-left: 30px;
+                }
+                #botonTwitter:hover{
+                    font-size: 70px;
+                    color: #00acee;
+                }
+                  } 
+             #tamañoDiv{
+                height: 500px; 
+                width: 500px;
+                border: solid black 2px;  
+                margin-left: 30px;
+             }
+            
+            .tamañoFoto{
+             width: 100%; height: 100%; 
+             display: flex; 
+             align-self: center; 
+                              }
+    #tablaProductos{
+    margin-left: 30px; 
+    margin-right: 30px;
+    margin-top: 30px;
+                    }
+
+    #colorLetraTabla{
+        color:rgb(11, 80, 11);
+        }
+
+
+
+
+
+
+                                  
