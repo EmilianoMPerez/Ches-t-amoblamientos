@@ -25,7 +25,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../bannerprincipal.jpg");
+    background-image: url("../imagenes/bannerprincipal.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -144,7 +144,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../banner-interior.jpg");
+  background-image: url("../imagenes/banner-interior.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
