@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keyword" content="fotos,trabajos,imagenes,habitacion,cocina,living,colores,modelos,escritorio, bilioteca,cajonera">
     <meta name="description" content="Mira todas las fotos de nuestros trabajos">
-    <title>Ches't amoblamientos/galeria</title>
+    <title>Galeria-Ches't amoblamientos</title>
     <script src="https://kit.fontawesome.com/69ac9f95d6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&display=swap" rel="stylesheet">
@@ -14,48 +14,63 @@
     <link rel="stylesheet" href="css/sass.css">
 </head>
 <body>
-  <header class="headerGeneral">
-    <h1>Todo lo que la imaginacion pueda crear en madera</h1>
-</header>
-<div class="contenedorEncabezado">
-     <h2>Todas las fotos de nuestros trabajos</h2>
-  </div>
-  <nav class="menuInterior">
+  
+  <header class="bannerInterior">
+    <h1 class="titulo">NUESTRA GALERIA</h1>
+    <h2 class="subtitulo">ALGUNOS DE NUESTROS TRABAJOS</h2>
+ </header>
+
+  <nav class="menuInterior" id="navGaleria">
     <ul class="listaMadreHome">
         <li class="logoChest">CHES'T</li>
         <li><a href="index.html" class="listaHome">HOME</a></li>
-        <li><a href="nosotrosB.html" class="listaHome">NOSOTROS</a></li>
-        <li><a href="productosB.html" class="listaHome">PRODUCTOS</a></li>
-        <li><a href="contactosB.html" class="listaHome">CONTACTO</a></li>
+        <li><a href="nosotros.html" class="listaHome">NOSOTROS</a></li>
+        <li><a href="productos.html" class="listaHome">PRODUCTOS</a></li>
+        <li><a href="contactos.html" class="listaHome">CONTACTO</a></li>
     </ul>
 </nav>
 
-  <hr>
-
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div id="tamañoDiv" class="carousel-item active">
-          <img src="mesadeluz2.png"  class="tamañoFoto" alt="mesadeluz2">
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div id="tamañoDiv" class="carousel-item active">
+        <img src="juegodecomedor.png" class="tamañoFoto" class="d-block w-100" alt="Juego de mesa y 4 sillas para comedor">
+        <div class="carousel-caption d-none d-md-block">
+           <h5 class="pieDeFoto">Juego de comedor</h5>
+           <p class="pieDeFoto">Combina estilo con comodidad</p>
         </div>
-        <div  id="tamañoDiv" class="carousel-item">
-          <img src="mesapcdesayuno.jpg"  class="tamañoFoto" alt="mesapcdesayuno">
-        </div>
-        <div id="tamañoDiv" class="carousel-item"> 
-          <img src="camastro.jpg"  class="tamañoFoto" alt="camastro">
-        </div>
-        <div id="tamañoDiv" class="carousel-item">
-          <img src="SERPIENTE.jpg"  class="tamañoFoto" alt="camastro">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
     </div>
+    <div   id="tamañoDiv" class="carousel-item">
+        <img src="mesadehabitacion.jpg" class="tamañoFoto" class="d-block w-100" alt="Mesa de habitacion con 2 cajones en color blanco">
+        <div class="carousel-caption d-none d-md-block">
+           <h5 class="pieDeFoto">Mesa de habitacion</h5>
+           <p class="pieDeFoto">Modernidad con un toque vintage</p>
+        </div>
+    </div>
+    <div  id="tamañoDiv" class="carousel-item">
+        <img src="organizador.jpg" class="tamañoFoto" class="d-block w-100" alt="Organizador vertical con 5 espacios de guardado">
+        <div class="carousel-caption d-none d-md-block">
+           <h5 class="pieDeFoto">Organizador vertical</h5>
+           <p class="pieDeFoto">Buen gusto en cualquier lugar de la casa</p>
+        </div>
+    </div>
+    <div  id="tamañoDiv" class="carousel-item">
+        <img src="muebleTvrack.png" class="tamañoFoto" class="d-block w-100" alt="Rack para Tv con organizador">
+        <div class="carousel-caption d-none d-md-block">
+           <h5 class="pieDeFoto">Rack para Tv</h5>
+           <p class="pieDeFoto">Decoracion,orden y utilidad</p>
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
     <div class="redes">
       <p class="textoRedes">Seguinos en redes sociales</p>
   </div>
@@ -63,15 +78,16 @@
   <footer>
     <a href="https://es-la.facebook.com ">
       <i class="fab fa-facebook-square" id="botonFacebook"></i>
- </a>Facebook
+ </a>
  <a href="https://www.instagram.com ">
      <i class="fab fa-instagram" id="botonInstagram"></i>
- </a>Instagram
+ </a>
  <a href="https://twitter.com ">
      <i class="fab fa-twitter-square" id="botonTwitter"></i>
- </a>Twitter 
+ </a> 
   </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-</body>
+
+  </body>
 </html>
