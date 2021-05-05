@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: darkolivegreen;
+    background-color: rgb(139, 69, 4);
+    
     }
     img{
         height: 100%;
@@ -10,9 +11,10 @@ body{
 
   .contenedorHome{
     display: grid;
-    height: 1200px; 
+    height: 1300px;
+    border: solid rgb(211, 104, 3) 4px; 
     grid-template-columns: 100%;
-    grid-template-rows: 35% 5% 50% 10%;
+    grid-template-rows: 36% 5% 50% 9%;
     grid-template-areas: "header"
                             "menu"
                             "contenido"
@@ -20,30 +22,28 @@ body{
 
                             .banner {
     
-                                height: 450px;
-                                margin-left: 30px;
-                                margin-right: 30px;
+                                height: 473px;
                                 grid-area: header;
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
-                                background-image: url("../vintage2.jpg");
+                                background-image: url("../bannerprincipal.jpg");
                                 background-position: center;
                                 background-size:cover;
                                 background-repeat: no-repeat;
                                 background-position-x: center;
                                 background-position-y: 100%;
                                 background-attachment: scroll;
-                                border: solid black 2px;
+                               
                                                        }
                                 .titulo {
-                                  font-size: 60px;
+                                  font-size: 70px;
                                   margin: 0;
                                   color:white;
                                   text-align: center;
                                   font-family: 'Roboto', sans-serif;
-                                   padding-bottom: 20px; }
+                                   padding-bottom: 40px; }
                                 .subtitulo {
                                   font-size: 30px;
                                   margin: 0;
@@ -54,20 +54,15 @@ body{
                                  }  
                                  
 
-                         nav{
-                                margin-left: 30px;
-                                margin-right: 30px;
-                                margin-bottom: 10px;
-                                grid-area: menu;
-                                border: solid black 2px;
-                                
-
+     nav{
+        grid-area: menu;    
+                               
 
                             .listaMadreHome{
                                     margin: 0;
                                     padding: 0;
                                     list-style-type: none;
-                                    background-color:rgb(11, 80, 11);       
+                                    background-color:red;       
                                     height: 100%;
                                     align-items: center;
                                     justify-items:center ;
@@ -78,7 +73,7 @@ body{
                                     .logoChest{
                                         font-family: 'Nunito Sans', sans-serif;
                                         color:darkgoldenrod;
-                                        font-size: 27px;
+                                        font-size: 30px;
                                         font-weight: bold;
                                         font-style: oblique;
                                         padding-left: 15px; 
@@ -90,34 +85,16 @@ body{
                                             }
                                             .listaHome:hover{
                                                 color: black;
-                                                transform: scale(1.2, 1.2);
                                                 font-weight: bold;
                                             }    
                                      }
 
 
                                         }
-             .encabezadoHome{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 40px;
-                width: 100%;
-                 margin-bottom: 10px;
-                 margin-top: 10px;
-                 border: solid black 2px;
-                color:white;  
-                font-family: 'Roboto', sans-serif;
-                font-size: 25px;
-                font-weight:lighter;
-                background: radial-gradient(circle, rgba(54,185,51,1) 0%, rgba(18,83,5,1) 100%);
-             }                           
+                                       
 
-            .seccionHome{
-                                    border: solid black 2px; 
-                                    margin-left: 30px;
-                                    margin-right: 30px;
-                                    margin-top: 50px;
+            .seccionHome{ 
+                                                       
                                     display:grid;
                                     grid-area: contenido;
                                     grid-template-columns: 33% 33% 34%;
@@ -157,18 +134,14 @@ body{
 
                                                 footer{
                                                     background-color:black;
-                                                            height: 100px;
+                                                            height: 122px;
                                                             display: flex;
                                                             flex-direction: row;
                                                             justify-content: center;
                                                             flex-wrap: nowrap;
                                                             align-items:center;
-                                                            margin-left: 30px;
-                                                            margin-bottom: 30px;
-                                                            margin-right: 30px;
-                                                            margin-top: 10px;
-                                                            grid-area: footer;
-
+                                                           grid-area: footer;
+                                                    
 
                                                             #botonFacebook{
                                                                 font-size: 60px;
@@ -209,62 +182,63 @@ body{
                                                                 color: #00acee;
                                                             }
                                                          } 
-                                                           }                     
-                     
-
-.headerGeneral{
-
+                               }  
+.bannerInterior{
     margin-left: 30px;
     margin-right: 30px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    border: solid black 2px;
-    background-color: rgb(11, 80, 11);
-    height: 150px;
-    text-align: center; 
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+    border-top:solid black 2px ;
+    height: 473px;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../banner-interior.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-attachment: scroll;
+   
+    }
+ .titulo {
+    font-size: 70px;
+    font-weight:lighter;
+    margin: 0;
+    color:white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+     }
+  .subtitulo {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 29px;
+    margin-top: 30PX;
+   }  
+                 
+#navGaleria{
+    margin-bottom:30px ;
 
-    h1{
-           
-        color:white;  
-        font-family: 'Roboto', sans-serif;
-        font-size: 30px;
-        padding-top: 50px;
-        font-weight:lighter;
+}
 
-           }
-         }
-
-.contenedorEncabezado{
-      
-    background: radial-gradient(circle, rgba(54,185,51,1) 0%, rgba(18,83,5,1) 100%);
-        margin: 30px;
-        height: 50px;
-        border: solid black 2px; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        h2{
-            color:black;  
-            font-family: 'Roboto', sans-serif;
-            font-size: 25px;
-            font-style: normal;
-            font-weight:lighter;    
-                                } 
-
-              }
               .menuInterior{
+                  height: 65px;
                 margin-left: 30px;
                 margin-right: 30px;
-                margin-bottom: 10px;
-                grid-area: menu;
                 border: solid black 2px;
 
             .listaMadreHome{
                     margin: 0;
                     padding: 0;
                     list-style-type: none;
-                    background-color:rgb(11, 80, 11);       
+                    background-color:rgb(197, 103, 14);       
                     height: 100%;
                     align-items: center;
                     justify-items:center ;
@@ -275,7 +249,7 @@ body{
                     .logoChest{
                         font-family: 'Nunito Sans', sans-serif;
                         color:darkgoldenrod;
-                        font-size: 27px;
+                        font-size: 40px;
                         font-weight: bold;
                         font-style: oblique;
                         padding-left: 15px; 
@@ -292,10 +266,11 @@ body{
                             }    
                      }
                     }
-
+ 
 
 
     .seccionNosotros{
+        border: solid black 2px;
         margin: 30px;
         height: 800px;
         display: grid;
@@ -312,9 +287,10 @@ body{
             grid-area: parrafo1; 
             background-color:rgb(112, 110, 110);
             text-align:left;
-            padding-top: 50px;
+            padding-top: 60px;
             padding-right: 30px;
             padding-left: 30px;
+
                             }
             .primeraImagenNosotros{
                 grid-area: imagen1;   
@@ -348,8 +324,8 @@ body{
     background: radial-gradient(circle, rgba(123,144,120,1) 0%, rgba(0,0,0,1) 100%);
     height: 60px;
     display: flex;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 30px;
 
     .textoRedes{
@@ -360,15 +336,13 @@ body{
 
     footer{
         background-color:black;
-                height: 100px;
+                height: 122px;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 flex-wrap: nowrap;
                 align-items:center;
-                margin-left: 30px;
-                margin-bottom: 30px;
-                margin-right: 30px;
+               
                 grid-area: footer;
 
 
@@ -415,14 +389,23 @@ body{
                 height: 500px; 
                 width: 500px;
                 border: solid black 2px;  
-                margin-left: 30px;
+                margin-left: 400px;
              }
+            
             
             .tamañoFoto{
              width: 100%; height: 100%; 
              display: flex; 
              align-self: center; 
-                              }
+            }
+.pieDeFoto{
+    color: black ;
+    font-weight: bold;
+}
+.pieDeFoto:hover{
+    transform: scale(1.2,1.2);
+}
+
     #tablaProductos{
     margin-left: 30px; 
     margin-right: 30px;
@@ -431,7 +414,749 @@ body{
 
     #colorLetraTabla{
         color:rgb(11, 80, 11);
+ }
+
+ @media only screen and (max-width: 768px){
+    .contenedorHome{
+        display: grid;
+        height: 1300px;
+        border: solid rgb(211, 104, 3) 2px; 
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 4% 59% 7%;
+        grid-template-areas: "header"
+                                "menu"
+                                "contenido"
+                                "footer" ;
+    
+                                .banner {
+                                    height: auto;
+                                    grid-area: header;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-image: url("../bannerprincipal.jpg");
+                                    background-position: center;
+                                    background-size:cover;
+                                    background-repeat: no-repeat;
+                                    background-position-x: center;
+                                    background-position-y: 100%;
+                                    background-attachment: scroll;
+                                   
+                                                           }
+                                    .titulo {
+                                      font-size: 55px;
+                                      margin: 0;
+                                      color:white;
+                                      text-align: center;
+                                      font-family: 'Roboto', sans-serif;
+                                       padding-bottom: 20px; }
+                                    .subtitulo {
+                                      font-size: 25px;
+                                      margin: 0;
+                                      color: black;
+                                      text-align: center;
+                                      font-family: 'Roboto', sans-serif;
+                                      padding-top: 29px;
+                                     }  
+                                     
+    
+         nav{
+            grid-area: menu;    
+                                   
+    
+                                .listaMadreHome{
+                                        margin: 0;  
+                                        padding: 0;
+                                        list-style-type: none;
+                                        background-color:rgba(192, 83, 10, 0.931);       
+                                        height: 100%;
+                                        align-items: center;
+                                        justify-items:center ;
+                                        display: grid;
+                                        grid-template-columns: 20% 20% 20% 20%  20%;
+                                        grid-template-rows: 100%;
+    
+                                        .logoChest{
+                                            font-family: 'Nunito Sans', sans-serif;
+                                            color:rgb(5, 58, 4);
+                                            font-size: 30px;
+                                           font-weight: bold;
+                                            font-style: oblique;
+                                            padding-left: 15px; 
+                                                  }
+                                        .listaHome{
+                                            color:white;  
+                                            font-family: 'Roboto', sans-serif;
+                                            font-size: 20px;
+                                                }
+                                                .listaHome:hover{
+                                                    color: black;
+                                                    font-weight: bold;
+                                                }    
+                                         }
+    
+    
+                                            }
+                                           
+    
+                                      .seccionHome{ 
+                                                              
+                                        display:grid;
+                                        grid-area: contenido;
+                                        grid-template-columns: 50% 50%;
+                                        grid-template-rows:33% 33% 34%;
+                                        grid-template-areas: 
+                                                            "foto1 foto2"
+                                                            "foto3 foto4"
+                                                            "foto5 foto6";
+    
+                                            #fotoUno{ 
+                                                grid-area: foto1;
+                                            }
+    
+                                            #fotoDos{
+                                                grid-area: foto2; 
+                                            }  
+    
+                                            #fotoTres{
+                                                grid-area: foto3; 
+                                                
+                                            } 
+    
+                                            #fotoCuatro{
+                                                 grid-area: foto4;
+                                             }
+    
+                                            #fotoCinco{
+                                                grid-area: foto5;
+                                             } 
+    
+                                            #fotoSeis{
+                                                grid-area: foto6;
+                                             }                    
+                                                                    
+                                                           
+                                            }
+    
+                                                    footer{
+                                                        background-color:black;
+                                                                 grid-area: footer;
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                justify-content: center;
+                                                                flex-wrap: nowrap;
+                                                                align-items:center;
+                                                              
+                                                        
+    
+                                                                #botonFacebook{
+                                                                    font-size: 50px;
+                                                                    color:white;
+                                                                     margin: 0;
+                                                                     flex-grow: 1;
+                                                                     text-align: center;
+                                                                     padding-left: 30px;
+                                                                         
+                                                                }
+                                                                #botonFacebook:hover{
+                                                                    font-size: 60px;
+                                                                    color:#3b5998;
+                                                                }
+                                                                #botonInstagram{
+                                                                    font-size: 50px;
+                                                                    color:white;
+                                                                     margin: 0;
+                                                                     flex-grow: 1;
+                                                                     text-align: center;
+                                                                     padding-left: 30px;
+                                                                        
+                                                                }
+                                                                #botonInstagram:hover{
+                                                                    font-size: 60px;
+                                                                    color: #983f9b;
+                                                                }
+                                                                #botonTwitter{
+                                                                    font-size: 50px;
+                                                                    color:white;
+                                                                     margin: 0;
+                                                                     flex-grow: 1;
+                                                                     text-align: center;
+                                                                     padding-left: 30px;
+                                                                }
+                                                                #botonTwitter:hover{
+                                                                    font-size: 60px;
+                                                                    color: #00acee;
+                                                                }
+                                                             } 
+    } 
+    .bannerInterior{
+        margin-left: 10px;
+        margin-right: 10px;
+        border-left: solid black 2px;
+        border-right: solid black 2px;
+        border-top:solid black 2px ;
+        height: 390px;
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../banner-interior.jpg");
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 100%;
+        background-attachment: scroll;
+       
         }
+        .titulo {
+            font-size: 55px;
+            margin: 0;
+            color:white;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+             padding-bottom: 20px; 
+            }
+          .subtitulo {
+            font-size: 25px;
+            margin: 0;
+            color: black;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            padding-top: 29px;
+           }  
+           .menuInterior{
+            height: 52px;
+          margin-left: 10px;
+          margin-right: 10px;
+          border: solid black 2px;
+
+      .listaMadreHome{
+              margin: 0;
+              padding: 0;
+              list-style-type: none;
+              background-color:rgb(197, 103, 14);       
+              height: 100%;
+              align-items: center;
+              justify-items:center ;
+              display: grid;
+              grid-template-columns: 20% 20% 20% 20%  20%;
+              grid-template-rows: 100%;
+
+              .logoChest{
+                font-family: 'Nunito Sans', sans-serif;
+                color:rgb(5, 58, 4);
+                font-size: 30px;
+               font-weight: bold;
+                font-style: oblique;
+                padding-left: 15px; 
+                        }
+              .listaHome{
+                  color:white;  
+                  font-family: 'Roboto', sans-serif;
+                  font-size: 20px;
+                      }
+                      .listaHome:hover{
+                          color: black;
+                          font-weight: bold;
+                      }    
+               }
+             }
+    .seccionNosotros{
+      border: solid black 2px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      height: 600px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: 
+               "parrafo1 imagen1"
+               "imagen2 parrafo2";
+                    } 
+    .textoNosotros1{
+        color:black; 
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        grid-area: parrafo1; 
+        background-color:rgb(112, 110, 110);
+        text-align:left;
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .primeraImagenNosotros{
+        grid-area: imagen1;   
+    }
+    .textoNosotros2{ 
+    color:black; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+    grid-area: parrafo2;
+    padding: 0;
+    background-color: rgb(204, 163, 148);
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+                    }
+    .segundaImagenNosotros{
+        grid-area: imagen2;
+    }
+    .tamañoImg{
+        height: 100%;
+    }
+    .redes{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight:bold;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        color:black;
+        background: radial-gradient(circle, rgba(123,144,120,1) 0%, rgba(0,0,0,1) 100%);
+        height: 52px;
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+    
+        .textoRedes{
+            margin: 0;    
+        }
+    
+    }
+    #tamañoDiv{
+        height: 500px; 
+        width: 500px;
+        border: solid black 2px;  
+        margin-left:120px;
+     }
+    
+    
+    .tamañoFoto{
+     width: 100%; height: 100%; 
+     display: flex; 
+     align-self: center; 
+    }
+    .pieDeFoto{
+        color: black ;
+        font-weight: bold;
+    }
+    .pieDeFoto:hover{
+        transform: scale(1.2,1.2);
+    }
+    #navGaleria{
+        margin-bottom:20px ;
+    
+    }
+    #tablaProductos{
+        margin-left: 10px; 
+        margin-right: 10px;
+        margin-top: 20px;
+                        }
+    
+        #colorLetraTabla{
+            color:rgb(11, 80, 11);
+     }     
+}
+
+@media only screen and (max-width: 480px){
+    .contenedorHome{
+        display: grid;
+        height: 1100px;
+        border: solid rgb(211, 104, 3) 2px; 
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 13% 49% 13%;
+        grid-template-areas: "header"
+                                "menu"
+                                "contenido"
+                                "footer" ;
+    
+                                .banner {
+                                    height: auto;
+                                    grid-area: header;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-image: url("../bannerprincipal.jpg");
+                                    background-position: center;
+                                    background-size:cover;
+                                    background-repeat: no-repeat;
+                                    background-position-x: center;
+                                    background-position-y: 100%;
+                                    background-attachment: scroll;
+                                   
+                                                           }
+                                    .titulo {
+                                      font-size: 35px;
+                                      margin: 0;
+                                      color:white;
+                                      text-align: center;
+                                      font-family: 'Roboto', sans-serif;
+                                       padding-bottom: 20px; }
+                                    .subtitulo {
+                                      font-size: 20px;
+                                      margin: 0;
+                                      color: black;
+                                      text-align: center;
+                                      font-family: 'Roboto', sans-serif;
+                                      padding-top: 29px;
+                                     }  
+                                     
+    
+         nav{
+            grid-area: menu;
+            height: 145px;    
+                                   
+    
+                                .listaMadreHome{
+                                        margin: 0;  
+                                        padding: 0;
+                                        
+                                        background-color:rgba(192, 83, 10, 0.931);       
+                                        height:100%;
+                                        
+                                        justify-items:center ;
+                                        display:flex;
+                                        flex-direction: column;
+                                        
+                                       
+                                        
+    
+                                        .logoChest{
+                                            font-family: 'Nunito Sans', sans-serif;
+                                            color:rgb(5, 58, 4);
+                                            font-size: 22px;
+                                           font-weight: bold;
+                                            font-style: oblique;
+                                            padding-left: 15px; 
+                                                  }
+                                        .listaHome{
+                                            color:white;  
+                                            font-family: 'Roboto', sans-serif;
+                                            font-size: 20px;
+                                                }
+                                                .listaHome:hover{
+                                                    color: black;
+                                                    font-weight: bold;
+                                                }    
+                                         }
+    
+    
+                                            }
+                                           
+    
+                                      .seccionHome{ 
+                                                            
+                                        display:grid;
+                                        grid-area: contenido;
+                                        grid-template-columns: 50% 50%;
+                                        grid-template-rows:33% 33% 34%;
+                                        grid-template-areas: 
+                                                            "foto1 foto2"
+                                                            "foto3 foto4"
+                                                            "foto5 foto6";
+                                        
+    
+                                            #fotoUno{ 
+                                                grid-area: foto1;
+                                              
+                                            }
+    
+                                            #fotoDos{
+                                                grid-area: foto2; 
+                                            }  
+    
+                                            #fotoTres{
+                                                grid-area: foto3; 
+                                                
+                                            } 
+    
+                                            #fotoCuatro{
+                                                 grid-area: foto4;
+                                             }
+    
+                                            #fotoCinco{
+                                                grid-area: foto5;
+                                             } 
+    
+                                            #fotoSeis{
+                                                grid-area: foto6;
+                                             }                    
+                                                                    
+                                                           
+                                            }
+    
+                                                    footer{
+                                                        background-color:black;
+                                                                 grid-area: footer;
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                justify-content: center;
+                                                                flex-wrap: nowrap;
+                                                                align-items:center;
+                                                                height: 100%;
+                                                              
+                                                        
+    
+                                                                #botonFacebook{
+                                                                    font-size: 50px;
+                                                                    color:white;
+                                                                     margin: 0;
+                                                                     flex-grow: 1;
+                                                                     text-align: center;
+                                                                     padding-left:0;
+                                                                         
+                                                                }
+                                                                #botonFacebook:hover{
+                                                                    font-size: 60px;
+                                                                    color:#3b5998;
+                                                                }
+                                                                #botonInstagram{
+                                                                    font-size: 50px;
+                                                                    color:white;
+                                                                     margin: 0;
+                                                                     flex-grow: 1;
+                                                                     text-align: center;
+                                                                     padding-left:20px;
+                                                                     padding-right: 20px;
+                                                                        
+                                                                }
+                                                                #botonInstagram:hover{
+                                                                    font-size: 60px;
+                                                                    color: #983f9b;
+                                                                }
+                                                                #botonTwitter{
+                                                                    font-size: 50px;
+                                                                    color:white;
+                                                                     margin: 0;
+                                                                     flex-grow: 1;
+                                                                     text-align: center;
+                                                                     padding-left:0;
+                                                                }
+                                                                #botonTwitter:hover{
+                                                                    font-size: 60px;
+                                                                    color: #00acee;
+                                                                }
+                                                             } 
+    }
+    .bannerInterior{
+        margin-left:0;
+        margin-right:0;
+        border: solid black 1px;
+        
+        height: 300px;
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../banner-interior.jpg");
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 100%;
+        background-attachment: scroll;
+       
+        }
+        .titulo {
+            font-size: 35px;
+            margin: 0;
+            color:white;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+             padding-bottom: 20px; }
+          .subtitulo {
+            font-size: 20px;
+            margin: 0;
+            color: black;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            padding-top: 29px;
+            }
+.menuInterior{
+    height: 144px;
+  margin-left: 0 ;
+  margin-right: 0 ;
+  border: solid black 1px;
+
+      .listaMadreHome{
+        margin: 0;  
+        padding: 0;
+        list-style-type: none;
+        background-color:rgba(192, 83, 10, 0.931);       
+        height:100%;
+        align-items: center;
+        justify-items:center ;
+        display:flex;
+        flex-direction: column;
+
+      .logoChest{
+        font-family: 'Nunito Sans', sans-serif;
+        color:rgb(5, 58, 4);
+        font-size: 20px;
+       font-weight: bold;
+        font-style: oblique;
+        padding-left: 15px; 
+                }
+                .listaHome{
+                    color:white;  
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 18px;
+                        }
+                        .listaHome:hover{
+                            color: black;
+                            font-weight: bold;
+                        }     
+       }
+     }
+     .seccionNosotros{
+        border: solid black 1px;
+        margin: 0;
+        height: 320px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+                 "parrafo1 imagen1"
+                 "imagen2 parrafo2";
+                      } 
+      .textoNosotros1{
+          color:black; 
+          font-family: 'Roboto', sans-serif;
+          font-size: 9.5px;
+          grid-area: parrafo1; 
+          background-color:rgb(112, 110, 110);
+          text-align:left;
+          padding:2px;
+          
+      }
+      .primeraImagenNosotros{
+          grid-area: imagen1;   
+      }
+      .textoNosotros2{ 
+      color:black; 
+      font-family: 'Roboto', sans-serif;
+      font-size: 9px; 
+      grid-area: parrafo2;
+      padding:2px;
+      background-color: rgb(204, 163, 148);
+      text-align:left;
+
+                      }
+      .segundaImagenNosotros{
+          grid-area: imagen2;
+      }
+      .tamañoImg{
+          height: 100%;
+      }   
+       .redes{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight:bold;
+        font-size: 17px;
+        align-items: center;
+        justify-content: center;
+        color:black;
+        background: radial-gradient(circle, rgba(123,144,120,1) 0%, rgba(0,0,0,1) 100%);
+        height: 52px;
+        display: flex;
+        margin: 0;
+    
+        .textoRedes{
+            margin: 0;    
+        }
+    
+    }
+
+    footer{
+        background-color:black;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: nowrap;
+                align-items:center;
+                height: 143px;
+              
+        
+
+                #botonFacebook{
+                    font-size: 50px;
+                    color:white;
+                     margin: 0;
+                     flex-grow: 1;
+                     text-align: center;
+                     padding-left:0;
+                         
+                }
+                #botonFacebook:hover{
+                    font-size: 60px;
+                    color:#3b5998;
+                }
+                #botonInstagram{
+                    font-size: 50px;
+                    color:white;
+                     margin: 0;
+                     flex-grow: 1;
+                     text-align: center;
+                     padding-left:30px;
+                     padding-right: 30px;
+                        
+                }
+                #botonInstagram:hover{
+                    font-size: 60px;
+                    color: #983f9b;
+                }
+                #botonTwitter{
+                    font-size: 50px;
+                    color:white;
+                     margin: 0;
+                     flex-grow: 1;
+                     text-align: center;
+                     padding-left:0;
+                }
+                #botonTwitter:hover{
+                    font-size: 60px;
+                    color: #00acee;
+                }
+             } 
+    #navGaleria{
+        margin-bottom:0;
+    
+    }
+    #tamañoDiv{
+        height: 330px; 
+        width: 330px;
+        border: solid black 1px;  
+        margin-left:15px;
+     }
+    
+    
+    .tamañoFoto{
+     width: 100%; height: 100%; 
+     display: flex; 
+     align-self: center; 
+    }
+    #tablaProductos{
+        margin-left: 10px; 
+        margin-right: 10px;
+        margin-top: 15px;
+                        }
+    
+        #colorLetraTabla{
+            color:rgb(11, 80, 11);
+     } 
+      
+      
+       }
+
+
 
 
 
